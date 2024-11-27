@@ -9,6 +9,7 @@ import java.util.Map;
 public class Pos {
     private String name;
     private List<ServiceProvider> supportedServiceProviderList;
+    // Integer -> installment monthly and Double -> installment rate %
     private Map<Integer, Double> installmentCommissionMap;
 
     public Pos(String name, Map<Integer, Double> installmentCommissionMap, List<ServiceProvider> supportedServiceProviderList) {

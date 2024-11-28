@@ -15,6 +15,7 @@ public class SetReview {
         mySet.add(new Student(3, "Mira"));
         mySet.add(new Student(6, "Karen"));
         mySet.add(new Student(8, "Arne"));
+        mySet.add(new Student(8, "Arne")); // to prevent duplicate we need to implement hashCode and equals
 
         System.out.println(mySet);
 

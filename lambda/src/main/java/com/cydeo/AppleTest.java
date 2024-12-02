@@ -22,6 +22,11 @@ public class AppleTest {
         List<Apple> greenApple = filterApples(inventory,new AppleGreenColorPredicate());
         System.out.println(greenApple);
 
+//        List<Apple> applesCharacter = prettyPrintApple(inventory);
+
+    }
+
+    private static void prettyPrintApple(List<Apple> inventory, ApplePredicate applePredicate) {
     }
 
     // It needs to be applicable to both heavy and green requirements -> it should be ApplePredicate (Interface)

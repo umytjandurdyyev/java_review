@@ -1,4 +1,6 @@
-package com.cydeo;
+package com.cydeo.apple;
+
+import com.cydeo.sorting.Color;
 
 import java.util.ArrayList;
 import java.util.List;

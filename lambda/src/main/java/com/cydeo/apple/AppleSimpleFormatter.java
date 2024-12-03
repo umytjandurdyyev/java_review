@@ -1,4 +1,4 @@
-package com.cydeo;
+package com.cydeo.apple;
 
 public class AppleSimpleFormatter implements AppleFormatter{
 

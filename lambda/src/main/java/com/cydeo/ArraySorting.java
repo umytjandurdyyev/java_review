@@ -21,8 +21,11 @@ public class ArraySorting {
         Sorting quickSort = () -> System.out.println("Quick sorting");
         as.sort(quickSort);
 
-        Sorting bubblrSorting = () -> System.out.println("Bubble sorting");
-        as.sort(bubblrSorting);
+//        Sorting bubbleSorting = () -> System.out.println("Bubble sorting");
+//        as.sort(bubbleSorting);
+
+        // paste directly action
+        as.sort(() -> System.out.println("Bubble sorting"));
     }
 
     private  void sort(Sorting sorting){

@@ -1,12 +1,13 @@
 package com.cydeo.functionalinterfaces;
 
-import java.util.function.Predicate;
+import java.util.function.*;
 
 public class Examples {
 
     public static void main(String[] args) {
 
         // ********************PREDICATE********************** boolean test(T t);
+        System.out.println("===============PREDICATE=============");
         // Anonymous class
 //        Predicate<Integer> lesserThan = new Predicate<Integer>() {
 //            @Override
@@ -22,5 +23,24 @@ public class Examples {
         // print
         System.out.println(lesserThan.test(20));
 
+        // ********************Consumer********************** void accept(T t);
+        System.out.println("================CONSUMER================");
+        Consumer<Integer> display = integer -> System.out.println(integer);
+        display.accept(20);
+
+        System.out.println("================BiCONSUMER================");
+        // ********************BiCONSUMER********************** void accept(T t, U u);
+        BiConsumer<Integer, Integer> addTwo = (x, y) -> System.out.println(x + y);
+        addTwo.accept(12, 23);
+
+        System.out.println("================FUNCTION================");
+        // ********************FUNCTION********************** R apply(T t);
+        Function<String, String> fun = str -> "Hello " + str;
+        System.out.println(fun.apply("Umytjan"));
+
+        // ********************SUPPLIER********************** T get();
+        System.out.println("================SUPPLIER================");
+        Supplier<Double> randomValue = () -> Math.random();
+        System.out.println(randomValue.get());
     }
 }

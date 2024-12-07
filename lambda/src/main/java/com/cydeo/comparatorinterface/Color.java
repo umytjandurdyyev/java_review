@@ -1,4 +1,4 @@
-package com.cydeo.sorting;
+package com.cydeo.comparatorinterface;
 
 public enum Color {
 

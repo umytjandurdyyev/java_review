@@ -1,7 +1,5 @@
 package com.cydeo.apple;
 
-import com.cydeo.sorting.Color;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;

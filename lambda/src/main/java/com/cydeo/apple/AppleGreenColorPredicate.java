@@ -1,7 +1,5 @@
 package com.cydeo.apple;
 
-import com.cydeo.sorting.Color;
-
 public class AppleGreenColorPredicate implements ApplePredicate{
 
 

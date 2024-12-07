@@ -1,6 +1,5 @@
 package com.cydeo.apple;
 
-import com.cydeo.sorting.Color;
 import lombok.Builder;
 import lombok.Data;
 

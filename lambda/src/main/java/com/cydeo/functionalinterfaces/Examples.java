@@ -23,7 +23,7 @@ public class Examples {
         // print
         System.out.println(lesserThan.test(20));
 
-        // ********************Consumer********************** void accept(T t);
+        // ********************CONSUMER********************** void accept(T t);
         System.out.println("================CONSUMER================");
         Consumer<Integer> display = integer -> System.out.println(integer);
         display.accept(20);

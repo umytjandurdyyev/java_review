@@ -23,6 +23,9 @@ public class Examples {
         // print
         System.out.println(lesserThan.test(20));
 
+        Predicate<Integer> pred = p -> p % 2 == 0 ? true: false;
+        System.out.println(pred.test(13));
+
         // ********************CONSUMER********************** void accept(T t);
         System.out.println("================CONSUMER================");
         Consumer<Integer> display = integer -> System.out.println(integer);

@@ -40,11 +40,5 @@ public class StreamOperations {
                 .filter(i -> i % 3 == 0)
                 .forEach(System.out::println);
 
-        System.out.println("TASK");
-        List<String> word = Arrays.asList("JAVA", "APPLE","HONDA","DEVELOPER");
-        word.stream()
-                .map(num -> num.length())
-                .forEach(System.out::println);
-
     }
 }

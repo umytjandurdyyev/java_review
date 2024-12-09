@@ -10,5 +10,5 @@ import lombok.NoArgsConstructor;
 public class Course {
 
     private String courseName;
-    private int courseId;
+    private Integer courseId;
 }

@@ -1,5 +1,7 @@
 package com.cydeo;
 
+import com.cydeo.task.dish.DishData;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -29,5 +31,14 @@ public class Reducing {
         System.out.println();
         System.out.println("SUM: " + numbers.stream()
                 .reduce(Integer::sum).get());
+
+        System.out.println();
+
+        // Count the number of dishes using the map and reduce
+        System.out.println(DishData.getAll().stream()
+                .map(d -> 1)
+                .reduce(0, (a, b) -> a + b));
+
+        System.out.println(DishData.getAll().stream().count());
     }
 }

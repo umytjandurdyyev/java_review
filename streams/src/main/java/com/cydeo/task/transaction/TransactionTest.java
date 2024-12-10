@@ -1,4 +1,4 @@
-package com.cydeo.task.numbers;
+package com.cydeo.task.transaction;
 
 import java.util.Optional;
 
@@ -77,5 +77,9 @@ public class TransactionTest {
         Optional<Transaction> min = TransactionData.getAll().stream()
                 .reduce((t1, t2) -> t1.getValue() < t2.getValue() ? t1 : t2);
         System.out.println(min.get());
+
+        Optional<Transaction> smallestValue = TransactionData.getAll().stream()
+                .min(comparing(Transaction::getValue));
+        System.out.println(smallestValue.get());
     }
 }
